@@ -7,7 +7,7 @@ execute if score <pose> variable matches -5 store success entity @s CustomNameVi
 execute if score <pose> variable matches -5..-1 run playsound entity.armor_stand.hit player @p[tag=running_trigger] ~ ~ ~ 0.5 2
 
 # Pose
-execute store success score <do_pose> variable if score <pose> variable matches -35..-6
+execute store success score <do_pose> variable if score <pose> variable matches -132..-6
 execute if score <pose> variable matches -50 run scoreboard players set <do_pose> variable 1
 execute if score <do_pose> variable matches 1 run function pandamium:misc/pose/do_pose
 execute if score <do_pose> variable matches 1 run playsound entity.armor_stand.hit player @p[tag=running_trigger] ~ ~ ~ 0.5 2
